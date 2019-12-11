@@ -1,3 +1,40 @@
+Daily Sales Quotes
+
+To Do:
+Sales Quote of the day page:
+enable social links to share properly
+enable QuoteScore counter to actually count + heart animation
+change quotes from appearing as random every time the page loads to a new quote every day
+add submit link for "Submit to be featured"
+More motivation link
+modal submission form
+greatest quote ever
+from (LinkedIn URL or @twitter)
+
+More Motivation page:
+header
+email list
+list of quotes that have been featured
+date posted
+social
+QuoteScore
+
+Change app from one page to multiple pages- add react router
+
+Back end:
+PostgreSQL tables/relationships
+store quotes
+store emails
+store social info
+
+                      ___________________________________________________________________________
+
+current state of the project:
+
+![SalesQuotes](./src/images/Sales-quotes-screenshot-12-11-2019.png)
+
+                      ___________________________________________________________________________
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,4 +103,5 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
 # Daily-Sales-Quotes
