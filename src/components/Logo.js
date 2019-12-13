@@ -13,23 +13,23 @@ const Logo = () => {
         <path
           d="M23.6011 7L25 10.625L30 2L32 4.46429"
           stroke="#FECE00"
-          stroke-width="4"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M14 13.9423L16 17.8915L19 10"
           stroke="#F91B21"
-          stroke-width="4"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M2 25L10 17"
           stroke="#1B31EA"
-          stroke-width="4"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
 

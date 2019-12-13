@@ -14,11 +14,11 @@ function App() {
       <NavBar>
         <Logo />
       </NavBar>
-      <body className="App-body">
+      <div className="App-body">
         <Quote />
         <QuoteScore />
         <Social />
-      </body>
+      </div>
       <Footer />
     </div>
   );

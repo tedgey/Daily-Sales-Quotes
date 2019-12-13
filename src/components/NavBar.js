@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const NAVBAR_HEIGHT = "60px";
 
 const Bar = styled.div`
-  width: 100%;
+  width: 98%;
   text-align: left;
   margin-left: 2rem;
   height: 10vh;
