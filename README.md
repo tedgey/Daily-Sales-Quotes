@@ -1,13 +1,15 @@
 Daily Sales Quotes
 
 To Do:
+
 Sales Quote of the day page:
 enable social links to share properly
-enable QuoteScore counter to actually count + heart animation
 change quotes from appearing as random every time the page loads to a new quote every day
 add submit link for "Submit to be featured"
 More motivation link
-modal submission form
+enable QuoteScore counter to have a heart animation
+
+Modal submission form:
 greatest quote ever
 from (LinkedIn URL or @twitter)
 

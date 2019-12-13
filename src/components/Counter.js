@@ -21,7 +21,7 @@ const CounterWrapper = styled.div`
 
 class Counter extends Component {
   state = {
-    count: 5,
+    count: 0,
     voted: false
   };
 
