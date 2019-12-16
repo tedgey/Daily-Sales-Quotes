@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import styled from "styled-components";
 import jsonData from "./quotes.json";
 
-const Quote = styled.div`
+const QuoteWrapper = styled.div`
   font-size: 34px;
   width: 80%;
   text-align: center;
@@ -15,14 +15,18 @@ const QuoteText = styled.div`
   padding: 1rem;
 `;
 
-let randomQuote = jsonData[Math.floor(Math.random() * jsonData.length)];
-console.log(randomQuote.quote);
+let dailyQuote = jsonData[0];
+console.log(dailyQuote.quote);
 
-export default () => (
-  <>
-    <Quote>
-      <QuoteText>{randomQuote.quote}</QuoteText>
-      <div>- {randomQuote.author}</div>
-    </Quote>
-  </>
-);
+class Quote extends Component {
+  render() {
+    return (
+      <QuoteWrapper>
+        <QuoteText className="dencoder">{dailyQuote.quote}</QuoteText>
+        <div>- {dailyQuote.author}</div>
+      </QuoteWrapper>
+    );
+  }
+}
+
+export default Quote;
