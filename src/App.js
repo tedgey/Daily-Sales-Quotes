@@ -8,8 +8,10 @@ import QuoteList from "./components/QuoteList";
 function App() {
   return (
     <Router>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/QuoteList" component={QuoteList} />
+      <div className="App">
+        <Route exact path="/" component={Home} />
+        <Route exact path="/QuoteList" component={QuoteList} />
+      </div>
     </Router>
   );
 }

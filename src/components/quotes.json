@@ -1,5 +1,9 @@
 [
   {
+    "quote": "Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.",
+    "author": "Thomas Edison"
+  },
+  {
     "quote": "It is never too late to be what you might have been.",
     "author": "George Eliot"
   },
@@ -10,9 +14,5 @@
   {
     "quote": "You make a living by what you get; you make a life by what you give.",
     "author": "Winston Churchill"
-  },
-  {
-    "quote": "Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.",
-    "author": "Thomas Edison"
   }
 ]

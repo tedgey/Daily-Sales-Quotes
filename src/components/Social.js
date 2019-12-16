@@ -14,7 +14,7 @@ const Social = styled.div`
   justify-content: space-evenly;
   text-align: center;
   color: LightGrey;
-  margin-top: 4rem;
+  margin-top: 2rem;
   // border-style: solid;
   // border-color: red;
 `;

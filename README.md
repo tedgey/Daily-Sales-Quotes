@@ -7,39 +7,41 @@ enable social links to share properly
 -twitter (complete)
 -facebook (seems easy enough, just need the dialin url. This site gives code: https://developers.facebook.com/docs/plugins/share-button/#)
 -linkedin
+
 Quotes are not longer random, but they are static for the first quote in quotes.json.
 
 - create timer or something to change quote every day
 
-  add submit link for "Submit to be featured"
-  More motivation link
   enable QuoteScore counter to have a heart animation
+  add submit link for "Submit to be featured" modal
 
 Modal submission form:
 greatest quote ever
 from (LinkedIn URL or @twitter)
 
 More Motivation page:
-header
-email list
-list of quotes that have been featured
-date posted
-social
-QuoteScore
+list of quotes that have been featured-- make responsive to dates posted
+date posted-- make responsive
+social (twitter finished, finish linkedin and facebook)
+QuoteScore-- real-time counter/backend
 
 Change app from one page to multiple pages- add react router
 
 Back end:
 PostgreSQL tables/relationships
-store quotes
-store emails
-store social info
+need to store quotes
+need to store submitted emails
+need to store social info
 
                       ___________________________________________________________________________
 
 current state of the project:
 
 ![SalesQuotes](./src/images/Sales-quotes-screenshot-12-11-2019.png)
+
+addition as of 12/16/2019
+
+![SalesQuotes](./src/images/Sales-quotes-screenshot-12-16-2019.png)
 
                       ___________________________________________________________________________
 
