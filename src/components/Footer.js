@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import QuoteList from "./QuoteList";
 
 const Footer = styled.div`
   font-size: 18px;
@@ -24,7 +26,9 @@ export default () => (
   <>
     <Footer>
       <div>Have a quote you live by? Submit here to be featured!</div>
-      <Motivation>More motivation!</Motivation>
+      <Motivation>
+        <Link to="/QuoteList">More Motivation!</Link>
+      </Motivation>
     </Footer>
   </>
 );

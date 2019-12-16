@@ -1,26 +1,16 @@
 import React from "react";
-import NavBar from "./components/NavBar";
-import Quote from "./components/Quote";
-import Logo from "./components/Logo";
-import QuoteScore from "./components/QuoteScore";
-import Social from "./components/Social";
-import Footer from "./components/Footer";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Home from "./components/Home";
 
 import "./App.css";
+import QuoteList from "./components/QuoteList";
 
 function App() {
   return (
-    <div className="App">
-      <NavBar>
-        <Logo />
-      </NavBar>
-      <div className="App-body">
-        <Quote />
-        <QuoteScore />
-        <Social />
-      </div>
-      <Footer />
-    </div>
+    <Router>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/QuoteList" component={QuoteList} />
+    </Router>
   );
 }
 
