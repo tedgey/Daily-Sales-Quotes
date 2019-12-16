@@ -5,7 +5,7 @@ To Do:
 Sales Quote of the day page:
 enable social links to share properly
 -twitter (complete)
--facebook
+-facebook (seems easy enough, just need the dialin url. This site gives code: https://developers.facebook.com/docs/plugins/share-button/#)
 -linkedin
 Quotes are not longer random, but they are static for the first quote in quotes.json.
 
