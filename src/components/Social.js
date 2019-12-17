@@ -38,11 +38,17 @@ let twitterFill = encode();
 let twitterReference = `https://twitter.com/intent/tweet?text="${twitterFill}`;
 console.log(twitterReference);
 
+// TODO edit this when we have website
+let facebookReference =
+  "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2Fshare-button%2F&amp;src=sdkpreparse";
+
 export default () => (
   <>
     <Social>
       <FontAwesomeIcon icon={faLinkedin} />
-      <FontAwesomeIcon icon={faFacebook} />
+      <a className="facebook-share-button" href={facebookReference}>
+        <FontAwesomeIcon icon={faFacebook} />
+      </a>
       <a className="twitter-share-button" href={twitterReference}>
         <FontAwesomeIcon icon={faTwitter} />
       </a>

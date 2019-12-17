@@ -6,7 +6,11 @@ Sales Quote of the day page:
 enable social links to share properly
 -twitter (complete)
 -facebook (seems easy enough, just need the dialin url. This site gives code: https://developers.facebook.com/docs/plugins/share-button/#)
--linkedin
+-linkedin (needs permission to log in to linkedin and to access their API. Need a linkedin company page and app logo:
+docs: https://www.linkedin.com/developers/apps/new
+https://docs.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow?context=linkedin/context
+https://docs.microsoft.com/en-us/linkedin/consumer/integrations/self-serve/share-on-linkedin
+)
 
 Quotes are not longer random, but they are static for the first quote in quotes.json.
 
