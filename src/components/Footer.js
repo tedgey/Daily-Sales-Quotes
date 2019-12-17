@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import QuoteList from "./QuoteList";
+import ModalDash from "./ModalDash";
 
 const Footer = styled.div`
   font-size: 18px;
@@ -24,8 +24,8 @@ const Motivation = styled.div`
 
 export default () => (
   <>
-    <Footer>
-      <div>Have a quote you live by? Submit here to be featured!</div>
+    <Footer id="root">
+      <ModalDash />
       <Motivation>
         <Link to="/QuoteList">More Motivation!</Link>
       </Motivation>
