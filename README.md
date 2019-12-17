@@ -3,9 +3,9 @@ Daily Sales Quotes
 To Do:
 
 Sales Quote of the day page:
-enable social links to share properly
+enable social links to share properly:
 -twitter (complete)
--facebook (seems easy enough, just need the dialin url. This site gives code: https://developers.facebook.com/docs/plugins/share-button/#)
+-facebook (placeholder url set)
 -linkedin (needs permission to log in to linkedin and to access their API. Need a linkedin company page and app logo:
 docs: https://www.linkedin.com/developers/apps/new
 https://docs.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow?context=linkedin/context
@@ -14,28 +14,30 @@ https://docs.microsoft.com/en-us/linkedin/consumer/integrations/self-serve/share
 
 Quotes are not longer random, but they are static for the first quote in quotes.json.
 
-- create timer or something to change quote every day
+- create timer/counter or something to change quote every day
 
   enable QuoteScore counter to have a heart animation
   add submit link for "Submit to be featured" modal
 
 Modal submission form:
-greatest quote ever
-from (LinkedIn URL or @twitter)
+styling tweaks
 
 More Motivation page:
 list of quotes that have been featured-- make responsive to dates posted
 date posted-- make responsive
-social (twitter finished, finish linkedin and facebook)
+social (twitter finished, facebook basically finished, finish linkedin)
 QuoteScore-- real-time counter/backend
-
-Change app from one page to multiple pages- add react router
 
 Back end:
 PostgreSQL tables/relationships
-need to store quotes
-need to store submitted emails
+need to store historic quotes
+need to store submitted quotes (modal)
+need to store submitted emails (modal)
 need to store social info
+
+Styling:
+responsive to different sizes
+animations
 
                       ___________________________________________________________________________
 
