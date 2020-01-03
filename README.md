@@ -19,6 +19,8 @@ Quotes are not longer random, but they are static for the first quote in quotes.
   enable QuoteScore counter to have a heart animation
   add submit link for "Submit to be featured" modal
 
+box shadows on Counter
+
 Modal submission form:
 styling tweaks
 
@@ -38,6 +40,11 @@ need to store social info
 Styling:
 responsive to different sizes
 animations
+
+sales quotes button take you to sales quotes page; dialin take you to landing page
+center the quotelist page
+fix size of input
+onclick change heart color (red when clicked)
 
                       ___________________________________________________________________________
 

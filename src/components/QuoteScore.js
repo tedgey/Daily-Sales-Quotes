@@ -9,7 +9,7 @@ const QuoteScore = styled.div`
   color: black;
   margin-top: 1.2rem;
   background: #fafafc;
-  box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 8px 6px 30px rgba(26, 26, 26, 0.1);
   border-radius: 15px;
   height: 2.5rem;
   // border-style: solid;
