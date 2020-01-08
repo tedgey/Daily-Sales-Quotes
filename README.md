@@ -12,7 +12,7 @@ https://docs.microsoft.com/en-us/linkedin/shared/authentication/authorization-co
 https://docs.microsoft.com/en-us/linkedin/consumer/integrations/self-serve/share-on-linkedin
 )
 
-Quotes are not longer random, but they are static for the first quote in quotes.json.
+Quotes are not longer random, but they are static for the second quote in the daily-sales-quotes database.
 
 - create timer/counter or something to change quote every day
 
@@ -33,7 +33,7 @@ QuoteScore-- real-time counter/backend
 Back end:
 PostgreSQL tables/relationships
 need to store historic quotes
-need to store submitted quotes (modal)
+need to store submitted quotes (modal) -- COMPLETED
 need to store submitted emails (modal)
 need to store social info
 

@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import axios from "axios";
+import { useForm } from "react-hook-form";
 
-const EmailWrapper = styled.div`
+const EmailWrap = styled.div`
   font-size: 18px;
   width: 98%;
   height: 10vh;
@@ -49,14 +51,27 @@ const EmailButton = styled.button`
   border-style: none;
 `;
 
-export default () => (
-  <>
-    <EmailWrapper>
-      <EmailBox>
-        Start your week off right with the best Sales Quotes!
-        <EmailInput value="Email" />
-        <EmailButton> Submit </EmailButton>
-      </EmailBox>
-    </EmailWrapper>
-  </>
-);
+const EmailWrapper = () => {
+  const { register, handleSubmit, errors } = useForm();
+  const url = "http://localhost:3001/v1/add_email_post";
+  const onSubmit = data => {
+    console.log(data);
+    axios.post(url, data);
+  };
+
+  return (
+    <>
+      <EmailWrap>
+        <EmailBox>
+          Start your week off right with the best Sales Quotes!
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <EmailInput name="email" ref={register} placeholder="Email" />
+            <EmailButton type="submit"> Submit </EmailButton>
+          </form>
+        </EmailBox>
+      </EmailWrap>
+    </>
+  );
+};
+
+export default EmailWrapper;
