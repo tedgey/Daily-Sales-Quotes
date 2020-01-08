@@ -1,6 +1,8 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
+import axios from "axios";
+import { useForm } from "react-hook-form";
 
 import styled from "styled-components";
 
@@ -59,9 +61,15 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function ModalDash() {
+const ModalDash = () => {
+  const { register, handleSubmit, errors } = useForm();
+  const url = "http://localhost:3001/v1/add_post";
+  const onSubmit = data => {
+    console.log(data);
+    axios.post(url, data);
+  };
+
   const classes = useStyles();
-  // getModalStyle is not a pure function, we roll the style only on the first render
   const [modalStyle] = React.useState(getModalStyle);
   const [open, setOpen] = React.useState(false);
 
@@ -72,6 +80,11 @@ export default function ModalDash() {
   const handleClose = () => {
     setOpen(false);
   };
+
+  // const onSubmit = () => {
+  //   const url = "http://localhost:3001/v1/add_post";
+  //   const axiosResponse = axios.post(url, this.state);
+  // };
 
   return (
     <div>
@@ -86,14 +99,26 @@ export default function ModalDash() {
         onClose={handleClose}
       >
         <div style={modalStyle} className={classes.paper}>
-          <QuoteInput placeholder="The greatest quote ever..." />
-          <p id="simple-modal-description">
-            From:
-            <SubmitInput placeholder="Linkedin URL or @Twitter" />
-          </p>
-          <SendQuote>Motivate!</SendQuote>
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <QuoteInput
+              name="quote"
+              ref={register}
+              placeholder="The greatest quote ever..."
+            />
+            <p id="simple-modal-description">
+              <SubmitInput
+                name="social_handle"
+                ref={register({ required: true })}
+                placeholder="Linkedin URL or @Twitter"
+              />
+              {errors.exampleRequired && <span>This field is required</span>}
+            </p>
+            <SendQuote type="submit">Motivate!</SendQuote>
+          </form>
         </div>
       </Modal>
     </div>
   );
-}
+};
+
+export default ModalDash;

@@ -32,7 +32,7 @@ class Quote extends Component {
   loadData = async () => {
     // const quoteCounter = "";
     // if a day has passed add 1 to quoteCounter and increase post/x x + 1
-    const url = "http://localhost:3000/v1/post/2";
+    const url = "http://localhost:3001/v1/post/2";
     const response = await fetch(url);
     const data = response.json();
     // console.log(data);
