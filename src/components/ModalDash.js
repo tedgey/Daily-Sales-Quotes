@@ -81,11 +81,6 @@ const ModalDash = () => {
     setOpen(false);
   };
 
-  // const onSubmit = () => {
-  //   const url = "http://localhost:3001/v1/add_post";
-  //   const axiosResponse = axios.post(url, this.state);
-  // };
-
   return (
     <div>
       Have a quote you live by?

@@ -52,7 +52,7 @@ const EmailButton = styled.button`
 `;
 
 const EmailWrapper = () => {
-  const { register, handleSubmit, errors } = useForm();
+  const { register, handleSubmit } = useForm();
   const url = "http://localhost:3001/v1/add_email_post";
   const onSubmit = data => {
     console.log(data);
