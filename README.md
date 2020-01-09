@@ -17,7 +17,6 @@ Quotes are not longer random, but they are static for the second quote in the da
 - create timer/counter or something to change quote every day
 
   enable QuoteScore counter to have a heart animation
-  add submit link for "Submit to be featured" modal
 
 box shadows on Counter
 

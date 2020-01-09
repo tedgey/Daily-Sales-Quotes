@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
+import QuoteScore from "./QuoteScore";
+import Social from "./Social";
+
 const DatePosted = styled.div`
   font-size: 24px;
   width: 6%;
@@ -18,10 +21,21 @@ const DatePosted = styled.div`
   // border-color: blue;
 `;
 
+export function getCurrentDate(separator = "/") {
+  let newDate = new Date();
+  let date = newDate.getDate();
+  let month = newDate.getMonth() + 1;
+  let year = newDate.getFullYear();
+
+  return `${
+    month < 10 ? `0${month}` : `${month}`
+  }${separator}${date}${separator}${year}`;
+}
+
 export default () => (
   <>
     <DatePosted>
-      <div> Jan 01/20 </div>
+      <div> {getCurrentDate()} </div>
     </DatePosted>
   </>
 );

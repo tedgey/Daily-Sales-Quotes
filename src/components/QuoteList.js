@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import { BrowserRouter as Link } from "react-router-dom";
 import Logo from "./Logo";
 import NavBar from "./NavBar";
 import Quote from "./Quote";

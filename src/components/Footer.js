@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ModalDash from "./ModalDash";
 
 const Footer = styled.div`
@@ -20,15 +20,16 @@ const Footer = styled.div`
 const Motivation = styled.div`
   color: #1b31ea;
   font-weight: 650;
+  border-bottom: none;
 `;
 
 export default () => (
   <>
     <Footer id="root">
       <ModalDash />
-      <Motivation>
-        <Link to="/QuoteList">More Motivation!</Link>
-      </Motivation>
+      <Link to="/QuoteList">
+        <Motivation> More Motivation! </Motivation>
+      </Link>
     </Footer>
   </>
 );
