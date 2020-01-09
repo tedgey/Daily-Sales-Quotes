@@ -6,7 +6,7 @@ import NavBar from "./NavBar";
 import Quote from "./Quote";
 import EmailWrapper from "./EmailWrapper";
 import SocialWrapper from "./SocialWrapper";
-import DatePosted from "./DatePosted";
+// import DatePosted from "./DatePosted";
 
 const QuoteList = styled.div`
   font-size: 18px;
@@ -23,6 +23,32 @@ const QuoteList = styled.div`
   // border-color: red;
 `;
 
+const DatePosted = styled.div`
+  font-size: 24px;
+  width: 6%;
+  height: 10vh;
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  color: #1b31ea;
+  font-weight: 700;
+  margin-left: 10rem;
+  margin-top: 2rem;
+  // border-style: solid;
+  // border-color: blue;
+`;
+
+export function getCurrentDate(past) {
+  let newDate = new Date();
+  let date = newDate.getDate() - past;
+  let month = newDate.getMonth() + 1;
+  let year = newDate.getFullYear();
+
+  return `${month < 10 ? `0${month}` : `${month}`}/${date}/${year}`;
+}
+
 export default () => (
   <>
     <NavBar>
@@ -30,12 +56,16 @@ export default () => (
     </NavBar>
     <EmailWrapper />
     <QuoteList>
-      <DatePosted />
+      <DatePosted>
+        <div>{getCurrentDate(0)}</div>
+      </DatePosted>
       <Quote />
     </QuoteList>
     <SocialWrapper />
     <QuoteList>
-      <DatePosted />
+      <DatePosted>
+        <div>{getCurrentDate(1)}</div>
+      </DatePosted>
       <Quote />
     </QuoteList>
     <SocialWrapper />

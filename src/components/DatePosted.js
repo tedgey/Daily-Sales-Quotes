@@ -23,7 +23,7 @@ const DatePosted = styled.div`
 
 export function getCurrentDate(separator = "/") {
   let newDate = new Date();
-  let date = newDate.getDate();
+  let date = newDate.getDate() + 1;
   let month = newDate.getMonth() + 1;
   let year = newDate.getFullYear();
 

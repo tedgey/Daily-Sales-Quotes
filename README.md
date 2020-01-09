@@ -14,9 +14,9 @@ https://docs.microsoft.com/en-us/linkedin/consumer/integrations/self-serve/share
 
 Quotes are not longer random, but they are static for the second quote in the daily-sales-quotes database.
 
-- create timer/counter or something to change quote every day
+-current date is automated, now just need to track and deliver past dates/corresponding quotes
 
-  enable QuoteScore counter to have a heart animation
+enable QuoteScore counter to have a heart animation
 
 box shadows on Counter
 
@@ -31,10 +31,10 @@ QuoteScore-- real-time counter/backend
 
 Back end:
 PostgreSQL tables/relationships
-need to store historic quotes
+need to store historic quotes -- quotes "store" but don't log, currently
 need to store submitted quotes (modal) -- COMPLETED
-need to store submitted emails (modal)
-need to store social info
+need to store submitted emails (modal) -- COMPLETED
+need to store social info -- COMPLETED
 
 Styling:
 responsive to different sizes
