@@ -1,9 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import QuoteScore from "./QuoteScore";
-import Social from "./Social";
-
 const DatePosted = styled.div`
   font-size: 24px;
   width: 6%;

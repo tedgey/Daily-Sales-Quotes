@@ -32,7 +32,26 @@ class Quote extends Component {
   loadData = async () => {
     // const quoteCounter = "";
     // if a day has passed add 1 to quoteCounter and increase post/x x + 1
-    const url = "http://localhost:3001/v1/post/2";
+
+    function date_iterate() {
+      let today = new Date(today.getDate());
+      let tomorrow = new Date(
+        today.getFullYear(),
+        today.getMonth(),
+        today.getDate() + 1,
+        0,
+        0,
+        0
+      );
+
+      if (today === tomorrow) {
+        post_count += 1;
+        date_iterate();
+      }
+    }
+
+    let post_count = 1;
+    const url = `http://localhost:3001/v1/post/${post_count}`;
     const response = await fetch(url);
     const data = response.json();
     // console.log(data);
@@ -51,17 +70,5 @@ class Quote extends Component {
     );
   }
 }
-
-// class Quote extends Component {
-//   render() {
-//     const { posts } = this.state;
-//     return (
-//       <QuoteWrapper>
-//         <QuoteText className="dencoder">{dailyQuote.quote}</QuoteText>
-//         <div>- {dailyQuote.author}</div>
-//       </QuoteWrapper>
-//     );
-//   }
-// }
 
 export default Quote;
