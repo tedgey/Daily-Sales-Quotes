@@ -17,14 +17,21 @@ const StartModal = styled.button`
 
 const QuoteInput = styled.input`
   width: 100%;
-  height: 50%;
+  height: 50px;
   font-size: 16px;
+  border-radius: 8px;
+  border-color: light-grey;
+  border-style: solid;
+  box-shadow: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
 `;
 
 const SubmitInput = styled.input`
   width: 60%;
-  height: 60%;
+  height: 40%;
   margin-left: 1rem;
+  margin-bottom: 20px;
   border-left: none;
   border-right: none;
   border-top: none;
@@ -37,7 +44,7 @@ const SendQuote = styled.button`
   background: white;
   font-size: 18px;
   cursor: pointer;
-  width: 25%;
+  width: 100%;
 `;
 
 function getModalStyle() {
@@ -101,6 +108,7 @@ const ModalDash = () => {
               placeholder="The greatest quote ever..."
             />
             <p id="simple-modal-description">
+              From:
               <SubmitInput
                 name="social_handle"
                 ref={register({ required: true })}

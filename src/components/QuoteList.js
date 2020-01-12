@@ -10,15 +10,16 @@ import SocialWrapper from "./SocialWrapper";
 
 const QuoteList = styled.div`
   font-size: 18px;
-  width: 80%;
+  width: 90%;
   height: 20vh;
   display: flex;
   flex-direction: center;
-  justify-content: flex-end;
+  justify-content: center;
   text-align: center;
   color: black;
   font-weight: 500;
   margin-top: 0;
+  margin-left: 1rem;
   // border-style: solid;
   // border-color: red;
 `;
@@ -35,7 +36,7 @@ const DatePosted = styled.div`
   color: #1b31ea;
   font-weight: 700;
   margin-left: 10rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   // border-style: solid;
   // border-color: blue;
 `;
@@ -65,6 +66,13 @@ export default () => (
     <QuoteList>
       <DatePosted>
         <div>{getCurrentDate(1)}</div>
+      </DatePosted>
+      <Quote />
+    </QuoteList>
+    <SocialWrapper />
+    <QuoteList>
+      <DatePosted>
+        <div>{getCurrentDate(2)}</div>
       </DatePosted>
       <Quote />
     </QuoteList>

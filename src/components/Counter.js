@@ -23,12 +23,13 @@ const CounterWrapper = styled.div`
 class Counter extends Component {
   state = {
     score: 0,
-    voted: false
+    voted: false,
+    post_count: 1
   };
 
   handleClick = () => {
-    const adding_url = "http://localhost:3001/v1/add/2";
-    const subtracting_url = "http://localhost:3001/v1/subtract/2";
+    const adding_url = `http://localhost:3001/v1/add/${this.state.post_count}`;
+    const subtracting_url = `http://localhost:3001/v1/subtract/${this.state.post_count}`;
 
     if (this.state.voted === true) {
       this.setState({
@@ -52,7 +53,7 @@ class Counter extends Component {
 
   //counter needs to reflect likes for the same quote that is appearing
   loadData = async () => {
-    const url = "http://localhost:3001/v1/post/2";
+    const url = `http://localhost:3001/v1/post/${this.state.post_count}`;
     const response = await fetch(url);
     const data = response.json();
     return data;
@@ -71,7 +72,6 @@ class Counter extends Component {
   };
 
   render() {
-    console.log(this.state);
     return (
       <CounterWrapper onClick={this.handleClick}>
         {this.state.score} <FontAwesomeIcon icon={faHeart} />

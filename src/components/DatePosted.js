@@ -12,7 +12,8 @@ const DatePosted = styled.div`
   text-align: center;
   color: #1b31ea;
   font-weight: 700;
-  margin-left: 10rem;
+  margin-left: 6rem;
+  margin-right: 2rem;
   margin-top: 2rem;
   // border-style: solid;
   // border-color: blue;

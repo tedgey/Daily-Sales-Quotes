@@ -20,9 +20,9 @@ const EmailWrap = styled.div`
 
 const EmailBox = styled.div`
   display: flex;
-  margin-top: 1rem;
   width: 60%;
   font-weight: 400;
+  margin-bottom: 10px;
   // border-style: solid;
   // border-color: black;
 `;
@@ -49,6 +49,7 @@ const EmailButton = styled.button`
   margin: 0px;
   background: white;
   border-style: none;
+  cursor: pointer;
 `;
 
 const EmailWrapper = () => {
