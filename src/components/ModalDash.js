@@ -100,7 +100,7 @@ const ModalDash = () => {
       <ModalCTA>
         Have a quote you live by?
         <StartModal type="button" onClick={handleOpen}>
-          Submit here to be featured
+          Submit here to be featured!
         </StartModal>
       </ModalCTA>
       <Modal

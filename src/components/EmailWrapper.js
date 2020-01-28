@@ -70,7 +70,7 @@ const EmailWrapper = () => {
           today!
           <form onSubmit={handleSubmit(onSubmit)}>
             <EmailInput name="email" ref={register} placeholder="Email" />
-            <EmailButton type="submit"> Submit </EmailButton>
+            <EmailButton type="submit"> Submit! </EmailButton>
           </form>
         </EmailBox>
       </EmailWrap>

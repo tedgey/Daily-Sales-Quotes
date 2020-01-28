@@ -18,7 +18,7 @@ const QuoteText = styled.div`
 class Quote extends Component {
   state = {
     daily_quote: [],
-    post_count: 2
+    post_count: 1
   };
 
   async componentDidMount() {
@@ -44,7 +44,7 @@ class Quote extends Component {
         <QuoteText className="dencoder">
           <div>{daily_quote.quote}</div>
         </QuoteText>
-        <div>{daily_quote.author}</div>
+        <div>-{daily_quote.author}</div>
       </QuoteWrapper>
     );
   }

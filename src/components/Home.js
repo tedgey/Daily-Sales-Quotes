@@ -6,14 +6,9 @@ import DailyQuoteLogo from "./DailyQuoteLogo";
 import Social from "./Social";
 import EmailWrapper from "./EmailWrapper";
 import ModalDash from "./ModalDash";
-import styled from "styled-components";
+// import styled from "styled-components";
 
 import "../App.css";
-
-// const HomeWrapper = styled.div`
-//   background-color: white;
-//   opacity: 0.85;
-// `;
 
 function Home() {
   return (
