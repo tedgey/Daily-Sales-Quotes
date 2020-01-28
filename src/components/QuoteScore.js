@@ -16,6 +16,8 @@ const QuoteScore = styled.div`
   // border-color: red;
 `;
 
+// QUOTESCORE REMOVED FROM HOMEPAGE
+
 export default () => (
   <>
     <QuoteScore>

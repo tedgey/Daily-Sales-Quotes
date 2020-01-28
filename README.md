@@ -2,42 +2,21 @@ Daily Sales Quotes
 
 To Do:
 
-Sales Quote of the day page:
-enable social links to share properly:
--twitter (complete)
--facebook (placeholder url set)
--linkedin (needs permission to log in to linkedin and to access their API. Need a linkedin company page and app logo:
-docs: https://www.linkedin.com/developers/apps/new
-https://docs.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow?context=linkedin/context
-https://docs.microsoft.com/en-us/linkedin/consumer/integrations/self-serve/share-on-linkedin
-)
-
 Quotes are not longer random, but they are static for the first quote in the daily-sales-quotes database.
 
--current date is automated, now just need to track and deliver past dates/corresponding quotes
-
-enable QuoteScore counter to have a heart animation
-
-box shadows on Counter
-
-More Motivation page:
-list of quotes that have been featured-- make responsive to dates posted
-date posted-- make responsive
-social (twitter finished, facebook basically finished, finish linkedin)
-QuoteScore-- real-time counter/backend
-
-Back end:
-PostgreSQL tables/relationships
-need to store historic quotes -- quotes "store" but don't log, currently
+- Need to have quotes increase daily
+- Potentially have different background images instead of the one image currently
 
 Styling:
 responsive to different sizes
-animations
+animations?
 
 sales quotes button take you to sales quotes page; dialin take you to landing page
 center the quotelist page
 fix size of input
-onclick change heart color (red when clicked)
+
+sessions/cookies/tracking/groupoing people to see the same quote and others to see a different one
+scrap quoteslist
 
                       ___________________________________________________________________________
 
@@ -48,6 +27,10 @@ current state of the project:
 addition as of 12/16/2019
 
 ![SalesQuotes](./src/images/Sales-quotes-screenshot-12-16-2019.png)
+
+addition as of 1/28/2020
+
+![SalesQuotes](./src/images/Sales-quotes-screenshot-1-28-2020.png)
 
                       ___________________________________________________________________________
 

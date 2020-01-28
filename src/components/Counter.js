@@ -20,11 +20,13 @@ const CounterWrapper = styled.div`
   // border-color: red;
 `;
 
+// COUNTER HAS BEEN REMOVED
+
 class Counter extends Component {
   state = {
     score: 0,
     voted: false,
-    post_count: 1
+    post_count: 2
   };
 
   handleClick = () => {

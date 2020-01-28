@@ -4,9 +4,12 @@ import styled from "styled-components";
 export const NAVBAR_HEIGHT = "60px";
 
 const Bar = styled.div`
-  width: 98%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 99%;
   text-align: left;
-  margin-left: 2rem;
+  padding-left: 2rem;
   height: 10vh;
   // border-style: solid;
   // border-color: blue;

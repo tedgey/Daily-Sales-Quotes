@@ -13,7 +13,8 @@ const EmailWrap = styled.div`
   text-align: center;
   color: black;
   font-weight: 500;
-  margin-top: 3rem;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
   // border-style: solid;
   // border-color: red;
 `;
@@ -23,6 +24,7 @@ const EmailBox = styled.div`
   width: 60%;
   font-weight: 400;
   margin-bottom: 10px;
+  flex-direction: column;
   // border-style: solid;
   // border-color: black;
 `;
@@ -64,7 +66,8 @@ const EmailWrapper = () => {
     <>
       <EmailWrap>
         <EmailBox>
-          Start your week off right with the best Sales Quotes!
+          Keep your team motivated and receive all of our +400 Sales Quotes
+          today!
           <form onSubmit={handleSubmit(onSubmit)}>
             <EmailInput name="email" ref={register} placeholder="Email" />
             <EmailButton type="submit"> Submit </EmailButton>

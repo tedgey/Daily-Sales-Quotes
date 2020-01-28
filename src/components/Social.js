@@ -3,7 +3,6 @@ import styled from "styled-components";
 import jsonData from "./quotes.json";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 
@@ -45,7 +44,6 @@ let facebookReference =
 export default () => (
   <>
     <Social>
-      <FontAwesomeIcon icon={faLinkedin} />
       <a className="facebook-share-button" href={facebookReference}>
         <FontAwesomeIcon icon={faFacebook} />
       </a>

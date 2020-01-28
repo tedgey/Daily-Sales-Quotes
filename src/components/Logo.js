@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Logo = () => {
   return (
     <>
-      <Link to="/">
+      <a href="https://dialin-co.webflow.io/">
         <svg
           width="34"
           height="27"
@@ -47,7 +47,7 @@ const Logo = () => {
             fill="black"
           />
         </svg>
-      </Link>
+      </a>
     </>
   );
 };
