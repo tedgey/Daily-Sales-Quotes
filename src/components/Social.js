@@ -22,7 +22,7 @@ let dailyQuote = jsonData[0];
 console.log(dailyQuote.quote);
 console.log(dailyQuote.author);
 
-let quoteAndAuthor = `${dailyQuote.quote}" - ${dailyQuote.author}`;
+let quoteAndAuthor = `${dailyQuote.quote}" -${dailyQuote.author}`;
 
 function encode(thequote) {
   var unencoded = quoteAndAuthor;

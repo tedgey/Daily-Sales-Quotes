@@ -17,20 +17,25 @@ const QuoteText = styled.div`
 
 class Quote extends Component {
   state = {
-    daily_quote: [],
-    post_count: 1
+    daily_quote: []
   };
 
   async componentDidMount() {
     const daily_quote = await this.loadData();
     this.setState({
-      daily_quote,
-      post_count: this.state.post_count
+      daily_quote
     });
   }
 
   loadData = async () => {
-    const url = `http://localhost:3001/v1/post/${this.state.post_count}`;
+    let initialDate = new Date(2020, 0, 28);
+    let now = Date.now();
+    let difference = now - initialDate;
+    let millisecondsPerDay = 24 * 60 * 60 * 1000;
+    let daysSince = Math.floor(difference / millisecondsPerDay);
+    console.log("daysSince", daysSince);
+
+    const url = `http://localhost:3001/v1/post/${daysSince}`;
     const response = await fetch(url);
     const data = response.json();
     // console.log(data);
