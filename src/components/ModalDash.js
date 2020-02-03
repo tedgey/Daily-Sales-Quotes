@@ -70,6 +70,7 @@ const useStyles = makeStyles(theme => ({
     position: "absolute",
     width: 450,
     height: 210,
+    borderRadius: 8,
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(2, 4, 3)
   }

@@ -2,21 +2,27 @@ Daily Sales Quotes
 
 To Do:
 
-Quotes are not longer random, but they are static for the first quote in the daily-sales-quotes database.
-
-- Need to have quotes increase daily
 - Potentially have different background images instead of the one image currently
 
 Styling:
 responsive to different sizes
 animations?
 
-sales quotes button take you to sales quotes page; dialin take you to landing page
-center the quotelist page
-fix size of input
+social icons-
+idle: grey
+onhover: turns blue
+clicked:
+10% bigger,
 
-sessions/cookies/tracking/groupoing people to see the same quote and others to see a different one
-scrap quoteslist
+Modal-
+The greatest quote ever give padding,
+buttons get 10% bigger and change color (try black)
+
+All buttons: buttons get 10% bigger and change color (try black)
+
+resize submit button
+
+media query different quote for phone/screen size- phone users get date - 1
 
                       ___________________________________________________________________________
 

@@ -22,3 +22,8 @@ body {
   background-color: white;
   background-size: cover;
 }
+
+:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
