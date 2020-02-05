@@ -73,7 +73,12 @@ const EmailWrapper = () => {
           Keep your team motivated and receive all of our +400 Sales Quotes
           today!
           <form onSubmit={handleSubmit(onSubmit)}>
-            <EmailInput name="email" ref={register} placeholder="Email" />
+            <EmailInput
+              type="email"
+              name="email"
+              ref={register}
+              placeholder="Email"
+            />
             <EmailButton type="submit"> Submit! </EmailButton>
           </form>
         </EmailBox>

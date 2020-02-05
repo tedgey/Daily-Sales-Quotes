@@ -8,11 +8,7 @@ To Do:
 social icons-
 
 clicked:
-10% bigger,
-
-Modal-
-
-All buttons: buttons get 10% bigger and change color (try black)
+10% bigger
 
                       ___________________________________________________________________________
 
