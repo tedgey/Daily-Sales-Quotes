@@ -16,7 +16,7 @@ current state of the project:
 
 Mobile responsive as of 2/5/2020 (shown with iphone 6/7/8 dimensions)
 
-![SalesQuotes](./src/images/Sales-quotes-screenshot-12-16-2019.png)
+![SalesQuotes](./src/images/Sales-quotes-mobile-screenshot-2-5-2020.png)
 
 addition as of 1/28/2020
 
