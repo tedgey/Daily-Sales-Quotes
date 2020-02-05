@@ -14,15 +14,13 @@ clicked:
 
 current state of the project:
 
-![SalesQuotes](./src/images/Sales-quotes-screenshot-12-11-2019.png)
-
-addition as of 12/16/2019
-
-![SalesQuotes](./src/images/Sales-quotes-screenshot-12-16-2019.png)
-
 addition as of 1/28/2020
 
 ![SalesQuotes](./src/images/Sales-quotes-screenshot-1-28-2020.png)
+
+as of 12/16/2019
+
+![SalesQuotes](./src/images/Sales-quotes-screenshot-12-16-2019.png)
 
                       ___________________________________________________________________________
 
