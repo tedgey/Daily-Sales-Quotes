@@ -22,7 +22,7 @@ const EmailWrap = styled.div`
 const EmailBox = styled.div`
   display: flex;
   width: 60%;
-  font-weight: 400;
+  font-weight: 600;
   margin-bottom: 10px;
   flex-direction: column;
   // border-style: solid;
@@ -60,6 +60,7 @@ const EmailWrapper = () => {
   const onSubmit = data => {
     console.log(data);
     axios.post(url, data);
+    alert("Thanks for signing up! You should receive our quotes soon!");
   };
 
   return (

@@ -3,21 +3,16 @@ Daily Sales Quotes
 To Do:
 
 - Potentially have different background images instead of the one image currently
-
-Styling:
-responsive to different sizes
-animations?
+- facebook is href-ing the dialin webflow page as a placeholder. Should probably link to the quote page when we have a domain.
 
 social icons-
+
 clicked:
 10% bigger,
 
 Modal-
-buttons get 10% bigger and change color (try black)
 
 All buttons: buttons get 10% bigger and change color (try black)
-
-resize submit button
 
 media query different quote for phone/screen size- phone users get date - 1
 

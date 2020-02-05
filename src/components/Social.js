@@ -78,8 +78,9 @@ class Social extends Component {
   }
 
   // TODO edit this when we have website
+  // https://dialin-co.webflow.io/
   // let facebookReference =
-  //   "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2Fshare-button%2F&amp;src=sdkpreparse";
+  "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhttps://dialin-co.webflow.io/%2Fdocs%2Fplugins%2Fshare-button%2F&amp;src=sdkpreparse";
 
   render() {
     const { daily_quote } = this.state;
@@ -87,7 +88,12 @@ class Social extends Component {
     console.log(this.state);
     return (
       <SocialWrapper>
-        <SocialShareButton className="facebook-share-button" href={daily_quote}>
+        <SocialShareButton
+          className="facebook-share-button"
+          href={
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdialin-co.webflow.io%2F&amp;src=sdkpreparse"
+          }
+        >
           <FontAwesomeIcon icon={faFacebook} />
         </SocialShareButton>
         <SocialShareButton className="twitter-share-button" href={twitterLink}>
