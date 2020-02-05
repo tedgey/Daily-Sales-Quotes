@@ -15,6 +15,9 @@ const EmailWrap = styled.div`
   font-weight: 500;
   margin-top: 2rem;
   padding-bottom: 2rem;
+  @media (max-width: 380px) {
+    margin-top: 5rem;
+  }
   // border-style: solid;
   // border-color: red;
 `;

@@ -83,7 +83,6 @@ class Social extends Component {
   "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhttps://dialin-co.webflow.io/%2Fdocs%2Fplugins%2Fshare-button%2F&amp;src=sdkpreparse";
 
   render() {
-    const { daily_quote } = this.state;
     let twitterLink = this.encodeQuote();
     console.log(this.state);
     return (

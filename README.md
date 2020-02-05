@@ -14,8 +14,6 @@ Modal-
 
 All buttons: buttons get 10% bigger and change color (try black)
 
-media query different quote for phone/screen size- phone users get date - 1
-
                       ___________________________________________________________________________
 
 current state of the project:

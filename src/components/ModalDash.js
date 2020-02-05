@@ -13,6 +13,10 @@ const StartModal = styled.button`
   font-size: 18px;
   cursor: pointer;
   margin-top: 3rem;
+  @media (max-width: 422px) {
+    display: block;
+    margin: 0;
+  }
 `;
 
 const QuoteInput = styled.input`

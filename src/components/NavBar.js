@@ -11,6 +11,9 @@ const Bar = styled.div`
   text-align: left;
   padding-left: 2rem;
   height: 10vh;
+  @media (max-width: 380px) {
+    display: none;
+  }
   // border-style: solid;
   // border-color: blue;
 `;

@@ -3,13 +3,14 @@ import styled from "styled-components";
 // import jsonData from "./quotes.json";
 
 const QuoteWrapper = styled.div`
+  display: none;
   font-size: 34px;
   width: 80%;
   text-align: center;
   color: black;
   @media (max-width: 900px) {
-    display: none;
-  }
+    display: block;
+  },
 
   // border-style: solid;
   // border-color: red;
@@ -17,9 +18,13 @@ const QuoteWrapper = styled.div`
 
 const QuoteText = styled.div`
   padding: 1rem;
+  @media (max-width: 380px) {
+    display: block;
+    margin-top 6rem;
+  }
 `;
 
-class Quote extends Component {
+class PhoneQuote extends Component {
   state = {
     daily_quote: []
   };
@@ -32,9 +37,9 @@ class Quote extends Component {
   }
 
   loadData = async () => {
-    let initialDate = new Date(2020, 0, 28);
+    let initialDate = new Date(2020, 11, 31);
     let now = Date.now();
-    let difference = now - initialDate;
+    let difference = initialDate - now;
     let millisecondsPerDay = 24 * 60 * 60 * 1000;
     let daysSince = Math.floor(difference / millisecondsPerDay);
     console.log("daysSince", daysSince);
@@ -59,4 +64,4 @@ class Quote extends Component {
   }
 }
 
-export default Quote;
+export default PhoneQuote;
