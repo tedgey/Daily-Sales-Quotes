@@ -16,7 +16,7 @@ const StartModal = styled.button`
 `;
 
 const QuoteInput = styled.input`
-  width: 100%;
+  width: 97%;
   height: 50px;
   font-size: 16px;
   border-radius: 8px;
@@ -25,6 +25,7 @@ const QuoteInput = styled.input`
   box-shadow: none;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding-left: 10px;
 `;
 
 const SubmitInput = styled.input`
@@ -42,9 +43,12 @@ const SendQuote = styled.button`
   font-weight: 650;
   border: none;
   background: white;
-  font-size: 18px;
+  font-size: 24px;
   cursor: pointer;
   width: 100%;
+  &:hover {
+    color: blue;
+  }
 `;
 
 const ModalCTA = styled.div`
@@ -82,6 +86,7 @@ const ModalDash = () => {
   const onSubmit = data => {
     console.log(data);
     axios.post(url, data);
+    handleClick();
   };
 
   const classes = useStyles();
@@ -94,6 +99,11 @@ const ModalDash = () => {
 
   const handleClose = () => {
     setOpen(false);
+  };
+
+  const handleClick = () => {
+    alert("Thank you for your quote!");
+    handleClose();
   };
 
   return (

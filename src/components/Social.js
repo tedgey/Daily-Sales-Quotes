@@ -17,6 +17,13 @@ const SocialWrapper = styled.div`
   // border-color: red;
 `;
 
+const SocialShareButton = styled.a`
+  color: grey;
+  &:hover {
+    color: blue;
+  }
+`;
+
 class Social extends Component {
   state = {
     daily_quote: [],
@@ -80,12 +87,12 @@ class Social extends Component {
     console.log(this.state);
     return (
       <SocialWrapper>
-        <a className="facebook-share-button" href={daily_quote}>
+        <SocialShareButton className="facebook-share-button" href={daily_quote}>
           <FontAwesomeIcon icon={faFacebook} />
-        </a>
-        <a className="twitter-share-button" href={twitterLink}>
+        </SocialShareButton>
+        <SocialShareButton className="twitter-share-button" href={twitterLink}>
           <FontAwesomeIcon icon={faTwitter} />
-        </a>
+        </SocialShareButton>
       </SocialWrapper>
     );
   }

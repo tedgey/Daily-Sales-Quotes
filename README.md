@@ -9,13 +9,10 @@ responsive to different sizes
 animations?
 
 social icons-
-idle: grey
-onhover: turns blue
 clicked:
 10% bigger,
 
 Modal-
-The greatest quote ever give padding,
 buttons get 10% bigger and change color (try black)
 
 All buttons: buttons get 10% bigger and change color (try black)
