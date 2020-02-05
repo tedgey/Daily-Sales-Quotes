@@ -1,4 +1,8 @@
-Daily Sales Quotes
+Daily Sales Quotes is an app created in React with an Express back end, connected to a PostgreSQL database.
+The app displays a new quote every day- a different quote for both desktop and mobile.
+It also allows users to submit their favorite quotes, share quotes on both twitter and facebook, and sign up with an email to receive our list of over 400 sales quotes.
+
+                      ___________________________________________________________________________
 
 To Do:
 
@@ -8,7 +12,7 @@ To Do:
 social icons-
 
 clicked:
-10% bigger
+10% bigger/animation
 
                       ___________________________________________________________________________
 
