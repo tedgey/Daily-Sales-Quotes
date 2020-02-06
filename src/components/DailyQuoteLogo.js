@@ -8,8 +8,6 @@ const DailyQuoteWrapper = styled.div`
   max-width: 15rem;
   margin-top: 2.8rem;
   max-height: 2rem;
-  // border-style: solid;
-  // border-color: black;
 `;
 
 const BlueHash = styled.svg`

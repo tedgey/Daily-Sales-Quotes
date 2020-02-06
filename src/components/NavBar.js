@@ -14,8 +14,6 @@ const Bar = styled.div`
   @media (max-width: 380px) {
     display: none;
   }
-  // border-style: solid;
-  // border-color: blue;
 `;
 
 const NavBar = ({ children }) => <Bar>{children}</Bar>;

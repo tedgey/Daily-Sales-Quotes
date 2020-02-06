@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-// import jsonData from "./quotes.json";
 
 const QuoteWrapper = styled.div`
   display: none;
@@ -10,10 +9,7 @@ const QuoteWrapper = styled.div`
   color: black;
   @media (max-width: 900px) {
     display: block;
-  },
-
-  // border-style: solid;
-  // border-color: red;
+  }
 `;
 
 const QuoteText = styled.div`
@@ -42,12 +38,10 @@ class PhoneQuote extends Component {
     let difference = initialDate - now;
     let millisecondsPerDay = 24 * 60 * 60 * 1000;
     let daysSince = Math.floor(difference / millisecondsPerDay);
-    console.log("daysSince", daysSince);
 
     const url = `http://localhost:3001/v1/post/${daysSince}`;
     const response = await fetch(url);
     const data = response.json();
-    // console.log(data);
     return data;
   };
 

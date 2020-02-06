@@ -43,19 +43,14 @@ class Social extends Component {
     let difference = now - initialDate;
     let millisecondsPerDay = 24 * 60 * 60 * 1000;
     let daysSince = Math.floor(difference / millisecondsPerDay);
-    console.log("daysSince", daysSince);
 
     const url = `http://localhost:3001/v1/post/${daysSince}`;
     const response = await fetch(url);
     const data = response.json();
-    console.log(data);
     data.then(response => {
-      this.setState(
-        {
-          encoded_quote: response
-        },
-        () => console.log(this.state)
-      );
+      this.setState({
+        encoded_quote: response
+      });
     });
   }
 
@@ -73,18 +68,16 @@ class Social extends Component {
     let twitterFill = encode();
 
     let twitterReference = `https://twitter.com/intent/tweet?text=${twitterFill}`;
-    console.log(twitterReference);
     return twitterReference;
   }
 
   // TODO edit this when we have website
   // https://dialin-co.webflow.io/
   // let facebookReference =
-  "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhttps://dialin-co.webflow.io/%2Fdocs%2Fplugins%2Fshare-button%2F&amp;src=sdkpreparse";
+  //  "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhttps://dialin-co.webflow.io/%2Fdocs%2Fplugins%2Fshare-button%2F&amp;src=sdkpreparse";
 
   render() {
     let twitterLink = this.encodeQuote();
-    console.log(this.state);
     return (
       <SocialWrapper>
         <SocialShareButton

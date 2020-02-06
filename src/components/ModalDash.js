@@ -88,7 +88,6 @@ const ModalDash = () => {
   const { register, handleSubmit, errors } = useForm();
   const url = "http://localhost:3001/v1/add_post";
   const onSubmit = data => {
-    console.log(data);
     axios.post(url, data);
     handleClick();
   };

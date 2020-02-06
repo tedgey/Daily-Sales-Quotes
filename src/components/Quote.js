@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-// import jsonData from "./quotes.json";
 
 const QuoteWrapper = styled.div`
   font-size: 34px;
@@ -10,9 +9,6 @@ const QuoteWrapper = styled.div`
   @media (max-width: 900px) {
     display: none;
   }
-
-  // border-style: solid;
-  // border-color: red;
 `;
 
 const QuoteText = styled.div`
@@ -37,12 +33,10 @@ class Quote extends Component {
     let difference = now - initialDate;
     let millisecondsPerDay = 24 * 60 * 60 * 1000;
     let daysSince = Math.floor(difference / millisecondsPerDay);
-    console.log("daysSince", daysSince);
 
     const url = `http://localhost:3001/v1/post/${daysSince}`;
     const response = await fetch(url);
     const data = response.json();
-    // console.log(data);
     return data;
   };
 

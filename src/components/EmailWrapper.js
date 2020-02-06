@@ -18,8 +18,6 @@ const EmailWrap = styled.div`
   @media (max-width: 380px) {
     margin-top: 5rem;
   }
-  // border-style: solid;
-  // border-color: red;
 `;
 
 const EmailBox = styled.div`
@@ -28,8 +26,6 @@ const EmailBox = styled.div`
   font-weight: 600;
   margin-bottom: 10px;
   flex-direction: column;
-  // border-style: solid;
-  // border-color: black;
 `;
 
 const EmailInput = styled.input`
@@ -40,8 +36,6 @@ const EmailInput = styled.input`
   border-top: none;
   border-color: grey;
   margin: 0px 8px 0px 8px;
-  // border-style: solid;
-  // border-color: cyan;
 `;
 
 const EmailButton = styled.button`
@@ -61,7 +55,6 @@ const EmailWrapper = () => {
   const { register, handleSubmit } = useForm();
   const url = "http://localhost:3001/v1/add_email_post";
   const onSubmit = data => {
-    console.log(data);
     axios.post(url, data);
     alert("Thanks for signing up! You should receive our quotes soon!");
   };
