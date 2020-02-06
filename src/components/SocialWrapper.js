@@ -16,8 +16,6 @@ const SocialWrapper = styled.div`
   font-weight: 500;
   margin-left: 20rem;
   margin-top: 0px;
-  // border-style: solid;
-  // border-color: blue;
 `;
 
 export default () => (

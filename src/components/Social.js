@@ -13,8 +13,6 @@ const SocialWrapper = styled.div`
   text-align: center;
   color: LightGrey;
   margin-top: 2rem;
-  // border-style: solid;
-  // border-color: red;
 `;
 
 const SocialShareButton = styled.a`
